@@ -1,0 +1,12 @@
+<h2 [style.color]="colorname">{{title | lowercase}}</h2>
+<h2 [ngClass]="cls">{{salary | currency:'INR'}}</h2>
+<h2 *ngIf="tax>0" [ngStyle]="sty">{{tax | percent}}</h2>
+<h2>{{dob | date:'dd-MM-YYYY'}}</h2>
+<br>
+<input [(ngModel)]="title" type="text">
+<input [disabled]="isDisabled" #alert type="text" (change)="alertMe(alert.value)">
+<button (click)="alertMe('Moiz')">Alert!</button>
+
+<ul>
+    <li *ngFor="let c of colors">{{c}}</li>
+</ul>
