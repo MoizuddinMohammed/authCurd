@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,5 +6,16 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  constructor(private http:HttpClientModule) { }
+  constructor(private http:HttpClient) { 
+
+  }
+  ProceedLogin(inputdata:any){
+    return this.http.get('http://localhost:3000/authenticate',inputdata);
+  }
+  IsLoggedIn(){
+    return localStorage.getItem('username')!=null;
+  }
+  GetUsername(){
+    return localStorage.getItem('username')!=null?localStorage.getItem('username'):'';
+  }
 }

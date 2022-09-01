@@ -1,0 +1,20 @@
+{
+  "authenticate": [
+    {
+      "username": "arbaazvillianz.av@gmail.com",
+      "password": "12345678"
+    }
+  ],
+  "users": [
+    {
+      "name": "Mohammed Moiz uddin",
+      "username": "arbaazvillianz.av@gmail.com",
+      "password": "12345678",
+      "mobile": "8801372316",
+      "dob": "1993-09-12",
+      "pincode": "500036",
+      "address": "16-2-835/122/293, Sanjay Gandhi Nagar, Asmangudh, Malakpet, Hyderabad, TS, India",
+      "id": 1
+    }
+  ]
+}
